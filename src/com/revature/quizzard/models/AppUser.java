@@ -2,26 +2,14 @@ package com.revature.quizzard.models;
 
 import java.util.Objects;
 
-/*
-    POJO = Plain Ol' Java Object
-
+/*  POJO = Plain Ol' Java Object
     Simple encapsulations of data. They do not have rich features, they simply hold related values.
-
-    Common convention re: class structures:
-        class {
-            fields
-            constructors
-            instance methods
-            overridden methods
-            static methods
-            nested classes/enums/interfaces
-        }
 
     Common methods from java.lang.Object that are overridden in most POJOs:
         - boolean equals(Object o)
         - int hashCode()
-        - String toString()
- */
+        - String toString()  */
+
 public class AppUser extends Object {
 
     private String firstName;
@@ -42,10 +30,7 @@ public class AppUser extends Object {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        // potentially add validation logic here (but there's really a better place to do this kind of logic)
-        this.firstName = firstName;
-    }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
     public String getLastName() {
         return lastName;
